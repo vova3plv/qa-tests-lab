@@ -1,4 +1,7 @@
 /Users/berdenko21/qa-tests-lab/src/main/java/com/example/domain/Task.java
 /Users/berdenko21/qa-tests-lab/src/main/java/com/example/domain/User.java
+/Users/berdenko21/qa-tests-lab/src/main/java/com/example/repository/InMemoryTaskRepository.java
+/Users/berdenko21/qa-tests-lab/src/main/java/com/example/repository/TaskManagementService.java
+/Users/berdenko21/qa-tests-lab/src/main/java/com/example/repository/TaskRepository.java
 /Users/berdenko21/qa-tests-lab/src/main/java/com/example/service/AccessControlService.java
 /Users/berdenko21/qa-tests-lab/src/main/java/com/example/service/TaskValidationService.java

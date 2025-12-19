@@ -1,4 +1,7 @@
-com/example/service/AccessControlService.class
 com/example/domain/Task.class
-com/example/service/TaskValidationService.class
+com/example/repository/InMemoryTaskRepository.class
+com/example/repository/TaskRepository.class
 com/example/domain/User.class
+com/example/service/AccessControlService.class
+com/example/service/TaskValidationService.class
+com/example/service/TaskManagementService.class
