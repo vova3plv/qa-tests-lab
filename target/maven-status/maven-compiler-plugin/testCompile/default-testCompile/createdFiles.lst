@@ -1,3 +1,5 @@
 com/example/integration/TaskManagementIntegrationTest.class
-com/example/service/TaskValidationServiceTest.class
 com/example/service/AccessControlServiceTest.class
+com/example/e2e/CucumberTest.class
+com/example/service/TaskValidationServiceTest.class
+com/example/e2e/steps/TaskSmokeSteps.class

@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.example.e2e.CucumberTest" time="0.459" tests="6" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="25"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/berdenko21/qa-tests-lab/target/test-classes:/Users/berdenko21/qa-tests-lab/target/classes:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/berdenko21/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/berdenko21/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/berdenko21/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/berdenko21/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/berdenko21/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/berdenko21/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-java/7.16.1/cucumber-java-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-core/7.16.1/cucumber-core-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-gherkin/7.16.1/cucumber-gherkin-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.16.1/cucumber-gherkin-messages-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/datatable/7.16.1/datatable-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-plugin/7.16.1/cucumber-plugin-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/docstring/7.16.1/docstring-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/html-formatter/21.3.0/html-formatter-21.3.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/junit-xml-formatter/0.3.0/junit-xml-formatter-0.3.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/berdenko21/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.16.1/cucumber-junit-platform-engine-7.16.1.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="java.vm.vendor" value="Homebrew"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="java.vm.specification.version" value="25"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="UA"/>
+    <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/berdenko21/qa-tests-lab/target/surefire/surefirebooter-20251219180907048_3.jar /Users/berdenko21/qa-tests-lab/target/surefire 2025-12-19T18-09-06_998-jvmRun1 surefire-20251219180907048_1tmp surefire_0-20251219180907048_2tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/berdenko21/qa-tests-lab/target/test-classes:/Users/berdenko21/qa-tests-lab/target/classes:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.0/junit-jupiter-5.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.0/junit-jupiter-api-5.10.0.jar:/Users/berdenko21/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-commons/1.10.0/junit-platform-commons-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.0/junit-jupiter-params-5.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.0/junit-jupiter-engine-5.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite/1.10.0/junit-platform-suite-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite-api/1.10.0/junit-platform-suite-api-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite-engine/1.10.0/junit-platform-suite-engine-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-suite-commons/1.10.0/junit-platform-suite-commons-1.10.0.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-launcher/1.10.0/junit-platform-launcher-1.10.0.jar:/Users/berdenko21/.m2/repository/org/mockito/mockito-junit-jupiter/5.11.0/mockito-junit-jupiter-5.11.0.jar:/Users/berdenko21/.m2/repository/org/mockito/mockito-core/5.11.0/mockito-core-5.11.0.jar:/Users/berdenko21/.m2/repository/net/bytebuddy/byte-buddy/1.14.12/byte-buddy-1.14.12.jar:/Users/berdenko21/.m2/repository/net/bytebuddy/byte-buddy-agent/1.14.12/byte-buddy-agent-1.14.12.jar:/Users/berdenko21/.m2/repository/org/objenesis/objenesis/3.3/objenesis-3.3.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-java/7.16.1/cucumber-java-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-core/7.16.1/cucumber-core-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-gherkin/7.16.1/cucumber-gherkin-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-gherkin-messages/7.16.1/cucumber-gherkin-messages-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/gherkin/28.0.0/gherkin-28.0.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/messages/24.1.0/messages-24.1.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/tag-expressions/6.1.0/tag-expressions-6.1.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-expressions/17.1.0/cucumber-expressions-17.1.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/datatable/7.16.1/datatable-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-plugin/7.16.1/cucumber-plugin-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/docstring/7.16.1/docstring-7.16.1.jar:/Users/berdenko21/.m2/repository/io/cucumber/html-formatter/21.3.0/html-formatter-21.3.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/junit-xml-formatter/0.3.0/junit-xml-formatter-0.3.0.jar:/Users/berdenko21/.m2/repository/io/cucumber/ci-environment/10.0.1/ci-environment-10.0.1.jar:/Users/berdenko21/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:/Users/berdenko21/.m2/repository/io/cucumber/cucumber-junit-platform-engine/7.16.1/cucumber-junit-platform-engine-7.16.1.jar:/Users/berdenko21/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/berdenko21"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-10-21"/>
+    <property name="java.home" value="/opt/homebrew/Cellar/openjdk/25.0.1/libexec/openjdk.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/berdenko21/qa-tests-lab"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="apple.awt.application.name" value="ForkedBooter"/>
+    <property name="surefire.real.class.path" value="/Users/berdenko21/qa-tests-lab/target/surefire/surefirebooter-20251219180907048_3.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="25.0.1"/>
+    <property name="user.name" value="berdenko21"/>
+    <property name="stdout.encoding" value="UTF-8"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="26.1"/>
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="Homebrew"/>
+    <property name="localRepository" value="/Users/berdenko21/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://github.com/Homebrew/homebrew-core/issues"/>
+    <property name="java.io.tmpdir" value="/var/folders/k9/rn8fzwbd4rq9d1spp6ljd94m0000gn/T/"/>
+    <property name="java.version" value="25.0.1"/>
+    <property name="user.dir" value="/Users/berdenko21/qa-tests-lab"/>
+    <property name="os.arch" value="aarch64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="native.encoding" value="UTF-8"/>
+    <property name="java.library.path" value="/Users/berdenko21/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="UTF-8"/>
+    <property name="java.vendor" value="Homebrew"/>
+    <property name="java.vm.version" value="25.0.1"/>
+    <property name="stdin.encoding" value="UTF-8"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="69.0"/>
+  </properties>
+  <testcase name="SMK-01 Owner can create a valid task" classname="Smoke tests for task creation" time="0.056">
+    <system-out><![CDATA[
+Scenario: SMK-01 Owner can create a valid task                                                    &amp#27;[90m# features/smoke_tasks.feature:6&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe task management system is initialized&amp#27;[0m                                                 &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.initSystem()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m&amp#27;[32m with role &amp#27;[0m&amp#27;[32m&amp#27;[1m"OWNER"&amp#27;[0m                                                             &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aUserWithRole(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma task with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Task 1"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"OK"&amp#27;[0m&amp#27;[32m and deadline offset &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m days and ownerId &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aTask(java.lang.String,java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user tries to create the task&amp#27;[0m                                                          &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.createTask()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mthe task is created successfully&amp#27;[0m                                                           &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.taskCreated()&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mrepository count should be &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m                                                                &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.repoCount(int)&amp#27;[0m
+]]></system-out>
+    <system-err><![CDATA[java.lang.instrument.IllegalClassFormatException: Error while instrumenting sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo with JaCoCo 0.8.11.202310140853/f33756c.
+	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClass(BuiltinClassLoader.java:560)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:602)
+	at java.base/java.lang.Class.forName(Class.java:599)
+	at java.base/java.util.ServiceLoader.loadProvider(ServiceLoader.java:755)
+	at java.base/java.util.ServiceLoader$ModuleServicesLookupIterator.hasNext(ServiceLoader.java:955)
+	at java.base/java.util.ServiceLoader$1.hasNext(ServiceLoader.java:1164)
+	at java.base/java.util.ServiceLoader$2.hasNext(ServiceLoader.java:1246)
+	at java.base/sun.util.cldr.CLDRLocaleProviderAdapter.<init>(CLDRLocaleProviderAdapter.java:75)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at java.base/sun.util.locale.provider.LocaleProviderAdapter.forType(LocaleProviderAdapter.java:181)
+	at java.base/sun.util.locale.provider.LocaleProviderAdapter.findAdapter(LocaleProviderAdapter.java:280)
+	at java.base/sun.util.locale.provider.LocaleProviderAdapter.getAdapter(LocaleProviderAdapter.java:251)
+	at java.base/java.util.Calendar.createCalendar(Calendar.java:1692)
+	at java.base/java.util.Calendar.getInstance(Calendar.java:1659)
+	at java.base/java.text.SimpleDateFormat.initializeCalendar(SimpleDateFormat.java:683)
+	at java.base/java.text.SimpleDateFormat.<init>(SimpleDateFormat.java:627)
+	at io.cucumber.core.internal.com.fasterxml.jackson.databind.util.StdDateFormat.<clinit>(StdDateFormat.java:116)
+	at io.cucumber.core.internal.com.fasterxml.jackson.databind.ObjectMapper.<clinit>(ObjectMapper.java:411)
+	at io.cucumber.core.plugin.Jackson.<clinit>(Jackson.java:13)
+	at io.cucumber.core.plugin.HtmlFormatter.<init>(HtmlFormatter.java:17)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:483)
+	at io.cucumber.core.plugin.PluginFactory.newInstance(PluginFactory.java:116)
+	at io.cucumber.core.plugin.PluginFactory.instantiate(PluginFactory.java:99)
+	at io.cucumber.core.plugin.PluginFactory.create(PluginFactory.java:63)
+	at io.cucumber.core.plugin.Plugins.createPlugins(Plugins.java:32)
+	at io.cucumber.core.plugin.Plugins.<init>(Plugins.java:25)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.createCucumberExecutionContext(CucumberEngineExecutionContext.java:53)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.startTestRun(CucumberEngineExecutionContext.java:95)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.ifChildren(CucumberEngineDescriptor.java:63)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.prepare(CucumberEngineDescriptor.java:33)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.prepare(CucumberEngineDescriptor.java:12)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$2(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:123)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:90)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:76)
+	at org.junit.platform.suite.engine.SuiteLauncher.execute(SuiteLauncher.java:63)
+	at org.junit.platform.suite.engine.SuiteTestDescriptor.execute(SuiteTestDescriptor.java:128)
+	at org.junit.platform.suite.engine.SuiteTestEngine.lambda$execute$0(SuiteTestEngine.java:73)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.platform.suite.engine.SuiteTestEngine.execute(SuiteTestEngine.java:73)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: Error while instrumenting sun/util/resources/cldr/provider/CLDRLocaleDataMetaInfo with JaCoCo 0.8.11.202310140853/f33756c.
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
+	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 85 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
+	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
+	... 86 more
+java.lang.instrument.IllegalClassFormatException: Error while instrumenting javax/lang/model/SourceVersion with JaCoCo 0.8.11.202310140853/f33756c.
+	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:94)
+	at java.instrument/java.lang.instrument.ClassFileTransformer.transform(ClassFileTransformer.java:257)
+	at java.instrument/sun.instrument.TransformerManager.transform(TransformerManager.java:188)
+	at java.instrument/sun.instrument.InstrumentationImpl.transform(InstrumentationImpl.java:594)
+	at java.base/java.lang.ClassLoader.defineClass2(Native Method)
+	at java.base/java.lang.ClassLoader.defineClass(ClassLoader.java:1052)
+	at java.base/java.security.SecureClassLoader.defineClass(SecureClassLoader.java:176)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.defineClass(BuiltinClassLoader.java:735)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.findClassInModuleOrNull(BuiltinClassLoader.java:678)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:604)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:639)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClassOrNull(BuiltinClassLoader.java:608)
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:578)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	at io.cucumber.core.resource.ClasspathSupport.requireValidPackageName(ClasspathSupport.java:41)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:49)
+	at io.cucumber.core.resource.ClasspathScanner.scanForClassesInPackage(ClasspathScanner.java:115)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1716)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at io.cucumber.java.JavaBackend.loadGlue(JavaBackend.java:41)
+	at io.cucumber.core.runner.Runner.<init>(Runner.java:56)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.createRunner(SingletonRunnerSupplier.java:44)
+	at io.cucumber.core.runtime.SingletonRunnerSupplier.get(SingletonRunnerSupplier.java:35)
+	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:35)
+	at io.cucumber.core.runtime.CucumberExecutionContext.getRunner(CucumberExecutionContext.java:140)
+	at io.cucumber.core.runtime.CucumberExecutionContext.runBeforeAllHooks(CucumberExecutionContext.java:92)
+	at io.cucumber.junit.platform.engine.CucumberEngineExecutionContext.runBeforeAllHooks(CucumberEngineExecutionContext.java:101)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.ifChildren(CucumberEngineDescriptor.java:63)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.before(CucumberEngineDescriptor.java:38)
+	at io.cucumber.junit.platform.engine.CucumberEngineDescriptor.before(CucumberEngineDescriptor.java:12)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:148)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:76)
+	at org.junit.platform.suite.engine.SuiteLauncher.execute(SuiteLauncher.java:63)
+	at org.junit.platform.suite.engine.SuiteTestDescriptor.execute(SuiteTestDescriptor.java:128)
+	at org.junit.platform.suite.engine.SuiteTestEngine.lambda$execute$0(SuiteTestEngine.java:73)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:186)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:214)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1939)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:570)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:560)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:153)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:176)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:265)
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:632)
+	at org.junit.platform.suite.engine.SuiteTestEngine.execute(SuiteTestEngine.java:73)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.apache.maven.surefire.junitplatform.LazyLauncher.execute(LazyLauncher.java:56)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:184)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:148)
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:122)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+Caused by: java.io.IOException: Error while instrumenting javax/lang/model/SourceVersion with JaCoCo 0.8.11.202310140853/f33756c.
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrumentError(Instrumenter.java:161)
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:111)
+	at org.jacoco.agent.rt.internal_4742761.CoverageTransformer.transform(CoverageTransformer.java:92)
+	... 83 more
+Caused by: java.lang.IllegalArgumentException: Unsupported class file major version 69
+	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:200)
+	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:180)
+	at org.jacoco.agent.rt.internal_4742761.asm.ClassReader.<init>(ClassReader.java:166)
+	at org.jacoco.agent.rt.internal_4742761.core.internal.instr.InstrSupport.classReaderFor(InstrSupport.java:280)
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:77)
+	at org.jacoco.agent.rt.internal_4742761.core.instr.Instrumenter.instrument(Instrumenter.java:109)
+	... 84 more
+]]></system-err>
+  </testcase>
+  <testcase name="SMK-02 Observer cannot create a task" classname="Smoke tests for task creation" time="0.004">
+    <system-out><![CDATA[
+Scenario: SMK-02 Observer cannot create a task                                                    &amp#27;[90m# features/smoke_tasks.feature:13&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe task management system is initialized&amp#27;[0m                                                 &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.initSystem()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user &amp#27;[0m&amp#27;[32m&amp#27;[1m"u2"&amp#27;[0m&amp#27;[32m with role &amp#27;[0m&amp#27;[32m&amp#27;[1m"OBSERVER"&amp#27;[0m                                                          &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aUserWithRole(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma task with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Task 2"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"OK"&amp#27;[0m&amp#27;[32m and deadline offset &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m days and ownerId &amp#27;[0m&amp#27;[32m&amp#27;[1m"u2"&amp#27;[0m &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aTask(java.lang.String,java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user tries to create the task&amp#27;[0m                                                          &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.createTask()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mcreation fails with &amp#27;[0m&amp#27;[32m&amp#27;[1m"SecurityException"&amp#27;[0m                                                    &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.creationFails(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mrepository count should be &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m                                                                &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.repoCount(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.1" classname="Examples" time="0.004">
+    <system-out><![CDATA[
+Scenario Outline: SMK-03 Invalid task data should be rejected                               &amp#27;[90m# features/smoke_tasks.feature:29&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe task management system is initialized&amp#27;[0m                                           &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.initSystem()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m&amp#27;[32m with role &amp#27;[0m&amp#27;[32m&amp#27;[1m"OWNER"&amp#27;[0m                                                       &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aUserWithRole(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma task with title &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"OK"&amp#27;[0m&amp#27;[32m and deadline offset &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m days and ownerId &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aTask(java.lang.String,java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user tries to create the task&amp#27;[0m                                                    &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.createTask()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mcreation fails with &amp#27;[0m&amp#27;[32m&amp#27;[1m"IllegalArgumentException"&amp#27;[0m                                       &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.creationFails(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mrepository count should be &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m                                                          &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.repoCount(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.2" classname="Examples" time="0.006">
+    <system-out><![CDATA[
+Scenario Outline: SMK-03 Invalid task data should be rejected                               &amp#27;[90m# features/smoke_tasks.feature:30&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe task management system is initialized&amp#27;[0m                                           &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.initSystem()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m&amp#27;[32m with role &amp#27;[0m&amp#27;[32m&amp#27;[1m"OWNER"&amp#27;[0m                                                       &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aUserWithRole(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma task with title &amp#27;[0m&amp#27;[32m&amp#27;[1m""&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"OK"&amp#27;[0m&amp#27;[32m and deadline offset &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m days and ownerId &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aTask(java.lang.String,java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user tries to create the task&amp#27;[0m                                                    &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.createTask()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mcreation fails with &amp#27;[0m&amp#27;[32m&amp#27;[1m"IllegalArgumentException"&amp#27;[0m                                       &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.creationFails(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mrepository count should be &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m                                                          &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.repoCount(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.3" classname="Examples" time="0.004">
+    <system-out><![CDATA[
+Scenario Outline: SMK-03 Invalid task data should be rejected                                           &amp#27;[90m# features/smoke_tasks.feature:31&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe task management system is initialized&amp#27;[0m                                                       &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.initSystem()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m&amp#27;[32m with role &amp#27;[0m&amp#27;[32m&amp#27;[1m"OWNER"&amp#27;[0m                                                                   &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aUserWithRole(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma task with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Task X"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"LONG_501"&amp#27;[0m&amp#27;[32m and deadline offset &amp#27;[0m&amp#27;[32m&amp#27;[1m1&amp#27;[0m&amp#27;[32m days and ownerId &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aTask(java.lang.String,java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user tries to create the task&amp#27;[0m                                                                &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.createTask()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mcreation fails with &amp#27;[0m&amp#27;[32m&amp#27;[1m"IllegalArgumentException"&amp#27;[0m                                                   &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.creationFails(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mrepository count should be &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m                                                                      &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.repoCount(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+  <testcase name="Example #1.4" classname="Examples" time="0.003">
+    <system-out><![CDATA[
+Scenario Outline: SMK-03 Invalid task data should be rejected                                      &amp#27;[90m# features/smoke_tasks.feature:32&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32mthe task management system is initialized&amp#27;[0m                                                  &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.initSystem()&amp#27;[0m
+  &amp#27;[32mGiven &amp#27;[0m&amp#27;[32ma user &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m&amp#27;[32m with role &amp#27;[0m&amp#27;[32m&amp#27;[1m"OWNER"&amp#27;[0m                                                              &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aUserWithRole(java.lang.String,java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32ma task with title &amp#27;[0m&amp#27;[32m&amp#27;[1m"Task X"&amp#27;[0m&amp#27;[32m and description &amp#27;[0m&amp#27;[32m&amp#27;[1m"OK"&amp#27;[0m&amp#27;[32m and deadline offset &amp#27;[0m&amp#27;[32m&amp#27;[1m-1&amp#27;[0m&amp#27;[32m days and ownerId &amp#27;[0m&amp#27;[32m&amp#27;[1m"u1"&amp#27;[0m &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.aTask(java.lang.String,java.lang.String,int,java.lang.String)&amp#27;[0m
+  &amp#27;[32mWhen &amp#27;[0m&amp#27;[32mthe user tries to create the task&amp#27;[0m                                                           &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.createTask()&amp#27;[0m
+  &amp#27;[32mThen &amp#27;[0m&amp#27;[32mcreation fails with &amp#27;[0m&amp#27;[32m&amp#27;[1m"IllegalArgumentException"&amp#27;[0m                                              &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.creationFails(java.lang.String)&amp#27;[0m
+  &amp#27;[32mAnd &amp#27;[0m&amp#27;[32mrepository count should be &amp#27;[0m&amp#27;[32m&amp#27;[1m0&amp#27;[0m                                                                 &amp#27;[90m# com.example.e2e.steps.TaskSmokeSteps.repoCount(int)&amp#27;[0m
+]]></system-out>
+  </testcase>
+</testsuite>
