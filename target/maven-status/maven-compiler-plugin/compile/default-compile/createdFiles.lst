@@ -1,0 +1,4 @@
+com/example/service/AccessControlService.class
+com/example/domain/Task.class
+com/example/service/TaskValidationService.class
+com/example/domain/User.class
