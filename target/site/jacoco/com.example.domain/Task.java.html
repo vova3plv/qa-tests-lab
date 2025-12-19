@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Task.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">qa-tests-lab</a> &gt; <a href="index.source.html" class="el_package">com.example.domain</a> &gt; <span class="el_source">Task.java</span></div><h1>Task.java</h1><pre class="source lang-java linenums">package com.example.domain;
+
+import java.time.LocalDate;
+
+public class Task {
+
+    private final String title;
+    private final String description;
+    private final LocalDate deadline;
+    private final String ownerId;
+
+<span class="fc" id="L12">    public Task(String title, String description, LocalDate deadline, String ownerId) {</span>
+<span class="fc" id="L13">        this.title = title;</span>
+<span class="fc" id="L14">        this.description = description;</span>
+<span class="fc" id="L15">        this.deadline = deadline;</span>
+<span class="fc" id="L16">        this.ownerId = ownerId;</span>
+<span class="fc" id="L17">    }</span>
+
+    public String getTitle() {
+<span class="fc" id="L20">        return title;</span>
+    }
+
+    public String getDescription() {
+<span class="fc" id="L24">        return description;</span>
+    }
+
+    public LocalDate getDeadline() {
+<span class="fc" id="L28">        return deadline;</span>
+    }
+
+    public String getOwnerId() {
+<span class="fc" id="L32">        return ownerId;</span>
+    }
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.11.202310140853</span></div></body></html>
