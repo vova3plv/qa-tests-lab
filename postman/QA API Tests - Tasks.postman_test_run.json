@@ -1,0 +1,256 @@
+{
+	"id": "0da0b2d8-e52f-4856-a726-7a831f2e1a6a",
+	"name": "QA API Tests - Tasks",
+	"timestamp": "2025-12-19T18:14:51.811Z",
+	"collection_id": "50943998-06cfebf2-9f27-4c94-8e1e-f7cc4d594864",
+	"folder_id": 0,
+	"environment_id": "50943998-cc2e3197-912d-4ac5-8b36-f8682468bfd4",
+	"totalPass": 14,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2025-12-19T18:14:51.471Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "bf4b6080-fe9c-4c51-aef7-5c0b3bb76780",
+			"name": "01 - Create task (OWNER)",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 23,
+			"responseCode": {
+				"code": 201,
+				"name": "Created"
+			},
+			"tests": {
+				"Status 201": true,
+				"Has id": true,
+				"OwnerId correct": true
+			},
+			"testPassFailCounts": {
+				"Status 201": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"OwnerId correct": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				23
+			],
+			"allTests": [
+				{
+					"Status 201": true,
+					"Has id": true,
+					"OwnerId correct": true
+				}
+			]
+		},
+		{
+			"id": "17efec48-1ee9-49a7-8e53-94490d8e8b9f",
+			"name": "02 - Get task (200)",
+			"url": "http://localhost:8080/api/tasks/f8165bf3-927d-4518-85d8-a38aa68dce4f",
+			"time": 2,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true,
+				"Same id": true,
+				"Has title": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Same id": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has title": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				2
+			],
+			"allTests": [
+				{
+					"Status 200": true,
+					"Same id": true,
+					"Has title": true
+				}
+			]
+		},
+		{
+			"id": "17a4b049-816e-4c70-8179-ae4e557bebfe",
+			"name": "03 - Update task (OWNER)",
+			"url": "http://localhost:8080/api/tasks/f8165bf3-927d-4518-85d8-a38aa68dce4f",
+			"time": 5,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status 200": true,
+				"Title updated": true
+			},
+			"testPassFailCounts": {
+				"Status 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Title updated": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				5
+			],
+			"allTests": [
+				{
+					"Status 200": true,
+					"Title updated": true
+				}
+			]
+		},
+		{
+			"id": "1f9ac590-df70-464a-bb68-d25c7d42fea3",
+			"name": "04 - Create task invalid title (400)",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 6,
+			"responseCode": {
+				"code": 400,
+				"name": "Bad Request"
+			},
+			"tests": {
+				"Status 400": true,
+				"Has error": true
+			},
+			"testPassFailCounts": {
+				"Status 400": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has error": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				6
+			],
+			"allTests": [
+				{
+					"Status 400": true,
+					"Has error": true
+				}
+			]
+		},
+		{
+			"id": "5c7fde89-6b12-4b69-a77e-33fd1cf27d81",
+			"name": "05 - Create task as OBSERVER (403)",
+			"url": "http://localhost:8080/api/tasks",
+			"time": 3,
+			"responseCode": {
+				"code": 403,
+				"name": "Forbidden"
+			},
+			"tests": {
+				"Status 403": true,
+				"Has error": true
+			},
+			"testPassFailCounts": {
+				"Status 403": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has error": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				3
+			],
+			"allTests": [
+				{
+					"Status 403": true,
+					"Has error": true
+				}
+			]
+		},
+		{
+			"id": "e76184a6-4108-4cc6-b7f1-cea217c027f2",
+			"name": "06 - Get task not found (404)",
+			"url": "http://localhost:8080/api/tasks/does-not-exist",
+			"time": 4,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status 404": true,
+				"Has error": true
+			},
+			"testPassFailCounts": {
+				"Status 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Has error": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				4
+			],
+			"allTests": [
+				{
+					"Status 404": true,
+					"Has error": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 43,
+	"collection": {
+		"requests": [
+			{
+				"id": "bf4b6080-fe9c-4c51-aef7-5c0b3bb76780",
+				"method": "POST"
+			},
+			{
+				"id": "17efec48-1ee9-49a7-8e53-94490d8e8b9f",
+				"method": "GET"
+			},
+			{
+				"id": "17a4b049-816e-4c70-8179-ae4e557bebfe",
+				"method": "PUT"
+			},
+			{
+				"id": "1f9ac590-df70-464a-bb68-d25c7d42fea3",
+				"method": "POST"
+			},
+			{
+				"id": "5c7fde89-6b12-4b69-a77e-33fd1cf27d81",
+				"method": "POST"
+			},
+			{
+				"id": "e76184a6-4108-4cc6-b7f1-cea217c027f2",
+				"method": "GET"
+			}
+		]
+	}
+}
