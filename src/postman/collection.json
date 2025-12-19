@@ -1,0 +1,263 @@
+{
+  "info": {
+    "_postman_id": "e7b3a9e7-1111-2222-3333-444444444444",
+    "name": "QA API Tests - Tasks",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "01 - Create task (OWNER)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-Role",
+            "value": "OWNER"
+          },
+          {
+            "key": "X-UserId",
+            "value": "u1"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/tasks",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tasks"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Task 1\",\n  \"description\": \"OK\",\n  \"deadline\": \"2030-01-01\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status 201', () => pm.response.to.have.status(201));",
+              "const json = pm.response.json();",
+              "pm.test('Has id', () => pm.expect(json.id).to.be.ok);",
+              "pm.test('OwnerId correct', () => pm.expect(json.ownerId).to.eql('u1'));",
+              "pm.environment.set('taskId', json.id);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "02 - Get task (200)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/tasks/{{taskId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            "{{taskId}}"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "const json = pm.response.json();",
+              "pm.test('Same id', () => pm.expect(json.id).to.eql(pm.environment.get('taskId')));",
+              "pm.test('Has title', () => pm.expect(json.title).to.be.ok);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "03 - Update task (OWNER)",
+      "request": {
+        "method": "PUT",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-Role",
+            "value": "OWNER"
+          },
+          {
+            "key": "X-UserId",
+            "value": "u1"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/tasks/{{taskId}}",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            "{{taskId}}"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Task 1 updated\",\n  \"description\": \"Updated\",\n  \"deadline\": \"2030-01-02\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status 200', () => pm.response.to.have.status(200));",
+              "const json = pm.response.json();",
+              "pm.test('Title updated', () => pm.expect(json.title).to.eql('Task 1 updated'));"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "04 - Create task invalid title (400)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-Role",
+            "value": "OWNER"
+          },
+          {
+            "key": "X-UserId",
+            "value": "u1"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/tasks",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tasks"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"\",\n  \"description\": \"OK\",\n  \"deadline\": \"2030-01-01\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status 400', () => pm.response.to.have.status(400));",
+              "const json = pm.response.json();",
+              "pm.test('Has error', () => pm.expect(json.error).to.be.ok);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "05 - Create task as OBSERVER (403)",
+      "request": {
+        "method": "POST",
+        "header": [
+          {
+            "key": "Content-Type",
+            "value": "application/json"
+          },
+          {
+            "key": "X-Role",
+            "value": "OBSERVER"
+          },
+          {
+            "key": "X-UserId",
+            "value": "u2"
+          }
+        ],
+        "url": {
+          "raw": "{{baseUrl}}/api/tasks",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tasks"
+          ]
+        },
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"title\": \"Task 2\",\n  \"description\": \"OK\",\n  \"deadline\": \"2030-01-01\"\n}"
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status 403', () => pm.response.to.have.status(403));",
+              "const json = pm.response.json();",
+              "pm.test('Has error', () => pm.expect(json.error).to.be.ok);"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "06 - Get task not found (404)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/tasks/does-not-exist",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "api",
+            "tasks",
+            "does-not-exist"
+          ]
+        }
+      },
+      "event": [
+        {
+          "listen": "test",
+          "script": {
+            "type": "text/javascript",
+            "exec": [
+              "pm.test('Status 404', () => pm.response.to.have.status(404));",
+              "const json = pm.response.json();",
+              "pm.test('Has error', () => pm.expect(json.error).to.be.ok);"
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
